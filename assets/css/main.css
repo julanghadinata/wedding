@@ -23,6 +23,10 @@
     font-display: swap;
 }
 
+body{
+    overflow-x: hidden !important;
+}
+
 .hide-scrollbar{
     scrollbar-width: none;
 }
