@@ -157,7 +157,7 @@ import { initSwiper } from "~/assets/js/swiper"
             </div>
         </div>
 
-        <div :class="['fixed z-50 w-full h-screen lg:hidden flex flex-col gap-4 justify-end items-center py-20 bg-[url(/images/dummy-cover.jpg)] bg-cover bg-no-repeat overflow-hidden transition-transform duration-500', isClosed ? '-translate-y-full' : 'translate-y-0']">
+        <div :class="['fixed z-50 w-full h-screen lg:hidden flex flex-col gap-4 justify-end items-center py-32 bg-[url(/images/dummy-cover.jpg)] bg-cover bg-no-repeat overflow-hidden transition-transform duration-500', isClosed ? '-translate-y-full' : 'translate-y-0']">
             <div class="absolute inset-0 bg-black opacity-60"></div>
             <!-- Salju container -->
             <div ref="snowContainer" class="absolute inset-0 pointer-events-none"></div>
@@ -419,7 +419,7 @@ import { initSwiper } from "~/assets/js/swiper"
                         data-animate="fadeRight" 
                         data-duration="1.2" 
                         data-once="false">
-                        <div class="lg:max-h-[25dvh] xl:max-h-[30dvh] overflow-y-auto">
+                        <div class="max-h-[28dvh] lg:max-h-[25dvh] xl:max-h-[30dvh] overflow-y-auto">
                             <transition-group name="slide-fade" tag="div" class="flex flex-col gap-2">
                             <div v-for="(rsvp, index) in paginatedMessages" :key="index" class="border p-4 rounded-lg flex flex-col gap-2 bg-gray-50 hover:bg-gray-100 transition">
                                 <p class="font-semibold text-gray-800 text-sm">{{ rsvp.nama }} 
