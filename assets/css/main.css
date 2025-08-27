@@ -1,0 +1,192 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Greatvibes';
+    src: url('/fonts/greatvibes-regular-webfont.woff2') format('woff2'),
+        url('/fonts/greatvibes-regular-webfont.woff2') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Libre';
+    src: url('/fonts/librebaskerville-regular-webfont.woff2') format('woff2'),
+        url('/fonts/librebaskerville-regular-webfont.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/poppins-regular-webfont.woff2') format('woff2'),
+        url('/fonts/poppins-regular-webfont.woff') format('woff');
+    font-display: swap;
+}
+
+.hide-scrollbar{
+    scrollbar-width: none;
+}
+
+[data-animate] {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all var(--duration, 0.8s) ease-out;
+}
+
+[data-animate].animate.fadeInUp {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+[data-animate].animate.fadeInDown {
+    opacity: 1;
+    transform: translateY(-40px);
+}
+
+[data-animate].animate.fadeInLeft {
+    opacity: 1;
+    transform: translateX(-40px);
+}
+
+[data-animate].animate.fadeInRight {
+    opacity: 1;
+    transform: translateX(40px);
+}
+
+/* state aktif */
+.animate {
+    opacity: 1;
+    transform: none;
+}
+
+/* variasi animasi */
+.fadeInUp    { transform: translateY(0) !important; }
+.fadeInDown  { transform: translateY(0) !important; }
+.fadeInLeft  { transform: translateX(0) !important; }
+.fadeInRight { transform: translateX(0) !important; }
+
+/* zoomInUp */
+.zoomInUp {
+    animation-name: zoomInUp;
+    animation-duration: var(--duration, 0.8s);
+    animation-timing-function: ease-out;
+    }
+
+@keyframes zoomInUp {
+    from {
+        opacity: 0;
+        transform: scale3d(0.8, 0.8, 0.8) translate3d(0, 40px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    }
+}
+
+/* Zoom In Down */
+.zoomInDown {
+  animation-name: zoomInDown;
+  animation-duration: var(--duration, 0.8s);
+  animation-timing-function: ease-out;
+}
+
+@keyframes zoomInDown {
+  from {
+    opacity: 0;
+    transform: scale3d(0.8, 0.8, 0.8) translate3d(0, -40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+  }
+}
+
+/* Zoom In Left */
+.zoomInLeft {
+  animation-name: zoomInLeft;
+  animation-duration: var(--duration, 0.8s);
+  animation-timing-function: ease-out;
+}
+
+@keyframes zoomInLeft {
+  from {
+    opacity: 0;
+    transform: scale3d(0.8, 0.8, 0.8) translate3d(-40px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+  }
+}
+
+/* Zoom In Right */
+.zoomInRight {
+    animation-name: zoomInRight;
+    animation-duration: var(--duration, 0.8s);
+    animation-timing-function: ease-out;
+}
+
+@keyframes zoomInRight {
+    from {
+        opacity: 0;
+        transform: scale3d(0.8, 0.8, 0.8) translate3d(40px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    }
+}
+
+/* Fade Left */
+.fadeLeft {
+    animation-name: fadeLeft;
+    animation-duration: var(--duration, 0.8s);
+    animation-timing-function: ease-out;
+}
+
+@keyframes fadeLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-40px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* Fade Right */
+.fadeRight {
+    animation-name: fadeRight;
+    animation-duration: var(--duration, 0.8s);
+    animation-timing-function: ease-out;
+}
+
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translate3d(40px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* Zoom In */
+.zoomIn {
+    animation-name: zoomIn;
+    animation-duration: var(--duration, 0.8s);
+    animation-timing-function: ease-out;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
