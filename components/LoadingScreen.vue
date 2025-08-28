@@ -1,11 +1,11 @@
 <template>
     <div ref="loadingRef" 
         class="fixed top-0 left-0 right-0 bottom-0 z-[999] bg-[#1A1A1A] flex items-center justify-center p-5">
-        <div class="flex flex-col gap-3 justify-center items-center text-white">
-            <p class="font-subtitle uppercase tracking-widest">
+        <div class="pt-10 flex flex-col gap-5 justify-center items-center text-white">
+            <p class="font-subtitle text-sm uppercase tracking-widest">
                 We Invite You To Celebrate
             </p>
-            <p class="relative text-white font-title text-2xl xl:text-4xl text-center flex flex-col leading-[2rem] xl:leading-[3rem]">
+            <p class="relative text-white font-title text-3xl xl:text-4xl text-center flex flex-col leading-[2rem] xl:leading-[3rem]">
                 <span>
                     Julang Hadinata  
                 </span>

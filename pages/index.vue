@@ -158,7 +158,7 @@ import { initSwiper } from "~/assets/js/swiper"
             </div>
         </div>
 
-        <div :class="['fixed z-50 w-full h-screen lg:hidden flex flex-col gap-4 justify-end items-center py-32 bg-[url(/images/dummy-cover.jpg)] bg-cover bg-no-repeat overflow-hidden transition-transform duration-500', isClosed ? '-translate-y-full' : 'translate-y-0']">
+        <div :class="['fixed z-50 w-full h-screen lg:hidden flex flex-col gap-4 justify-end items-center pt-10 pb-36 bg-[url(/images/dummy-cover.jpg)] bg-cover bg-no-repeat overflow-hidden transition-transform duration-500', isClosed ? '-translate-y-full' : 'translate-y-0']">
             <div class="absolute inset-0 bg-black opacity-60"></div>
             <!-- Salju container -->
             <div ref="snowContainer" class="absolute inset-0 pointer-events-none"></div>
