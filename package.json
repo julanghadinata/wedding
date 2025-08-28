@@ -12,6 +12,7 @@
   "dependencies": {
     "@nuxt/eslint": "^1.9.0",
     "eslint": "^9.34.0",
+    "gsap": "^3.13.0",
     "nuxt": "^4.0.3",
     "swiper": "^11.2.10",
     "vue": "^3.5.18",

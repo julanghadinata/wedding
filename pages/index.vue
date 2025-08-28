@@ -134,6 +134,7 @@ import { initSwiper } from "~/assets/js/swiper"
 </script>
 
 <template>
+    <LoadingScreen/>
     <div class="flex lg:flex-row flex-col">
         
         <div class="relative w-4/6 h-screen hidden lg:flex flex-col gap-4 justify-end items-center py-20 bg-[url(/images/dummy-cover.jpg)] bg-cover bg-no-repeat overflow-hidden">
@@ -176,10 +177,12 @@ import { initSwiper } from "~/assets/js/swiper"
                 <p class="font-primary text-center">Kepada Yth. <br> Bpk/Ibu/Saudara/I</p>
                 <p class="font-primary text-lg text-center font-semibold tracking-wide">ASEP SAMSUDIN</p>
             </div>
-            <button class="relative flex gap-2 items-center font-primary bg-white text-xs font-semibold text-black px-4 py-2 rounded-lg" @click="isClosed = true">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 fill-black relative -top-[2px]" viewBox="0 0 256 256"><path d="M228.44,89.34l-96-64a8,8,0,0,0-8.88,0l-96,64A8,8,0,0,0,24,96V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V96A8,8,0,0,0,228.44,89.34ZM96.72,152,40,192V111.53Zm16.37,8h29.82l56.63,40H56.46Zm46.19-8L216,111.53V192ZM128,41.61l81.91,54.61-67,47.78H113.11l-67-47.78Z"></path></svg>
-                Buka Undangan
-            </button>
+            <div class="relative w-full flex justify-center">
+                <button class="absolute flex gap-2 items-center font-primary bg-white text-xs font-semibold text-black px-4 py-2 animate-bounce-scale" @click="isClosed = true">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 fill-black relative -top-[2px]" viewBox="0 0 256 256"><path d="M228.44,89.34l-96-64a8,8,0,0,0-8.88,0l-96,64A8,8,0,0,0,24,96V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V96A8,8,0,0,0,228.44,89.34ZM96.72,152,40,192V111.53Zm16.37,8h29.82l56.63,40H56.46Zm46.19-8L216,111.53V192ZM128,41.61l81.91,54.61-67,47.78H113.11l-67-47.78Z"></path></svg>
+                    Buka Undangan
+                </button>
+            </div>
         </div>
 
         <div class="relative flex h-screen overflow-hidden w-full lg:w-2/6">

@@ -194,3 +194,12 @@ body{
         transform: scale(1);
     }
 }
+
+@keyframes bounce-scale {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+.animate-bounce-scale {
+    animation: bounce-scale 4.5s infinite cubic-bezier(.68,-0.55,.27,1.55);
+}
